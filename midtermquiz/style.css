@@ -1,0 +1,159 @@
+body {
+    margin-top: 0;
+    background-image: linear-gradient(to top, #ecedee 0%, #eceeef 75%, #e7e8e9 100%);
+    min-height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    padding: 60px 0;
+  }
+  
+
+.container.gallery-container {
+    background-color: #fff;
+    color: #2F4F4F;
+    border-radius: 20px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    height: auto;
+    overflow: hidden;
+}
+
+.gallery-container h1 {
+    text-align: center;
+    margin-top: 70px;
+    font-weight: bold;
+}
+
+.gallery-container p.page-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 25px auto;
+    color:#658989;
+    font-size: 18px;
+}
+
+.gallery {
+    padding: 40px;
+}
+
+.gallery .lightbox img {
+    width: 100%;
+    margin-bottom: 30px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.2);
+}
+
+.gallery .lightbox img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+}
+
+.gallery img {
+    border-radius: 4px;
+}
+
+.baguetteBox-button {
+    background-color: transparent !important;
+}
+
+.caption {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 12px;
+    color: #8B4513;
+}
+
+/* Position the caption at the bottom left */
+.baguetteBox-figure .caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    max-width: 100%;
+}
+
+/* Hide the caption by default */
+.baguetteBox-figure .caption {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+/* Show the caption on hover */
+.baguetteBox-figure:hover .caption {
+    opacity: 1;
+}
+
+@media(max-width: 768px) {
+    body {
+        padding: 0;
+    }
+    .container.gallery-container {
+        border-radius: 0;
+    }
+}
+
+/* Navbar styles */
+.navbar {
+    background-color: #2F4F4F !important;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.06);
+    padding: 5px 0;
+}
+
+.navbar-brand {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-link {
+    font-size: 18px;
+    color: #ffffff;
+    margin-left: 30px;
+}
+
+.nav-link:hover {
+    color: #c2c5c9;
+}
+
+/* Navigation bar styles */
+.navbar {
+    margin-bottom: 40px;
+  }
+  
+  .navbar-nav {
+    margin-left: auto;
+  }
+  
+  .nav-link {
+    margin-right: 20px;
+    font-size: 17px;
+    color:  #FFF5EE;
+    margin-left: 30px;
+  } 
+
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  
+  footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+@media(max-width: 768px) {
+    .navbar-nav {
+        margin-left: auto;
+    }
+}
